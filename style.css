@@ -56,6 +56,16 @@ body.tutorial
     color: #ffff !important;
     left: 50%;
     top: 50%;
-    trans
+    transform: translate(-50%, -50%);
 
+}
+
+.link
+{
+    display: flex;
+    width: 75px;
+    height: 75px;
+    margin: 0 5px;
+    justify-content: center;
+    align-items: center;
 }
