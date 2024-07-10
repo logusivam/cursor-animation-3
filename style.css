@@ -93,8 +93,29 @@ body.tutorial
     transition: all 0.2s ease 0.05s;
 }
 
-.link:hover .settings-icon__line, .link:hover .settings-icon__rect
+.link:hover .settings-icon__line, 
+.link:hover .settings-icon__rect
 {
     stroke: var(--color-link);
     transition: all 0.2s ease 0.05s;
+}
+
+.link:hover .settings-icon__group--1 .settings-icon__rect
+{
+    transform: translateY(20px);
+}
+
+.link:hover .settings-icon__group--2 .settings-icon__rect
+{
+    transform: translateY(-20px);
+}
+
+.link:hover .settings-icon__group--3 .settings-icon__rect
+{
+    transform: translateY(25px);
+}
+
+.page, .page a
+{
+    cursor: none;
 }
