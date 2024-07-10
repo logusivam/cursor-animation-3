@@ -69,3 +69,32 @@ body.tutorial
     justify-content: center;
     align-items: center;
 }
+
+.settings-icon
+{
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.settings-icon__line
+{
+    stroke: var(--color-text);
+    stroke-width: 5px;
+    transition: all 0.2s ease 0.05s;
+}
+
+
+.settings-icon__rect
+{
+    stroke: var(--color-text);
+    fill: var(--color-bg);
+    stroke-width: 5px;
+    transition: all 0.2s ease 0.05s;
+}
+
+.link:hover .settings-icon__line, .link:hover .settings-icon__rect
+{
+    stroke: var(--color-link);
+    transition: all 0.2s ease 0.05s;
+}
