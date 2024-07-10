@@ -37,4 +37,25 @@ body.tutorial
     height: 10px;
     left: -2.5px;
     top: -2.5px;
+    border-radius: 50%;
+    z-index: 11000;
+    background: var(--color-text);
+}
+
+.cursor--canvas
+{
+    width: 100vw;
+    height: 100vh;
+    z-index: 12000;
+}
+
+.nav 
+{
+    display: flex;
+    position: absolute;
+    color: #ffff !important;
+    left: 50%;
+    top: 50%;
+    trans
+
 }
