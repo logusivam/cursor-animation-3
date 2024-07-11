@@ -46,5 +46,8 @@ const initCanvas = () => {
     polygon.StrokeColor = StrokeColor;
     polygon.strokeWidth = strokeWidth;
     polygon.smooth();
-    group = new paper.Group
+    group = new paper.Group([polygon]);
+    group.applyMatrix = false;
+
+    
 }
