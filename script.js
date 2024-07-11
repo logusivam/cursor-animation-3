@@ -34,7 +34,7 @@ const initCanvas = () => {
   };
   paper.setup(canvas);
   const strokeColor = "rgba(255, 0, 0, 0.5)";
-  const strokeWidth = 1;
+  const strokeWidth = 5;
   const segments = 8;
   const radius = 25;
   
