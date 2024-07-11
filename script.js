@@ -49,5 +49,48 @@ const initCanvas = () => {
     group = new paper.Group([polygon]);
     group.applyMatrix = false;
 
-    
+    const noiseObjects = polygon.segments.map(() => 
+    new simplexNoise());
+    let bigCoordinates = [];
+
+    const lerp = (a, b, n) => {
+        return(1-n) * a + n * b;
+    };
+    const map = (value, in_min, in_max, out_min, out_max) => {
+        return (
+            ((value - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
+        );
+    };
+
+    paper.view.onFrame = event => {
+
+        lastX = lerp(lastX, clientX, 0.2);
+        lastY = lerp(lastY, clientY, 0.2);
+        group.position = new paper.Point(lastX, lastY);
+    }
 }
+
+initCanvas();
+const initHovers = () => {
+    
+    const handleMouseEnter = e => {
+        const navItem = e.currentTarget;
+        const navItemBox = navItem.getBoundingClientRect();
+        stuckX = Math.round(navItemBox.left + navItemBox.width / 2);
+        stuckY = Math.round(navItemBox.top + navItemBox.height / 2);
+        isStuck = true;
+    };
+
+    const handleMouseLeave = () => {
+        isStuck = false;
+    };
+
+    //Event listeners
+    const linkItems = document.querySelectorAll(".link");
+    linkItems.forEach(item => {
+        item.addEventListener("mouseenter", handleMouseEnter);
+        item.addEventListener("mouseleave", handleMouseLeave);
+    });
+};
+
+initHovers();
