@@ -21,3 +21,4 @@ let lastY = 0;
 let isStuck = false;
 let showCursor = false;
 let group, stuckX, stuckY, fillOuterCircle;
+
