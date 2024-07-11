@@ -66,6 +66,7 @@ body.tutorial
     width: 75px;
     height: 75px;
     margin: 0 5px;
+    font-size: medium;
     justify-content: center;
     align-items: center;
 }
