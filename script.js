@@ -37,4 +37,8 @@ const initCanvas = () => {
     const noiseScale = 150; //speed
     const noiseRange = 4;  //range of distortion
     let isNoisy = false; // state
+
+    const polygon = new paper.Path.RegularPolygon(
+        
+    )
 }
