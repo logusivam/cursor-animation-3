@@ -55,7 +55,7 @@ body.tutorial
     position: absolute;
     color: #ffff !important;
     left: 50%;
-    top: 50%;
+    top: 50%; font-size: 30px; 
     transform: translate(-50%, -50%);
 
 }
@@ -65,8 +65,7 @@ body.tutorial
     display: flex;
     width: 75px;
     height: 75px;
-    margin: 0 5px;
-    font-size: medium;
+    margin: 15px;
     justify-content: center;
     align-items: center;
 }
