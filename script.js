@@ -39,6 +39,9 @@ const initCanvas = () => {
     let isNoisy = false; // state
 
     const polygon = new paper.Path.RegularPolygon(
-        
-    )
+        new paper.Point(0, 0),
+        segments,
+        radius
+    );
+    polygon.StrokeColor = StrokeColor;
 }
