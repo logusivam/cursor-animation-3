@@ -1,6 +1,6 @@
 let clientX = -100;
 let clientY = -100;
-const innercursor = document.querySelector(".cursor--small");
+const innerCursor = document.querySelector(".cursor--small");
 
 const initCursor = () => {
     document.addEventListener("mousemove", e => {
@@ -9,7 +9,7 @@ const initCursor = () => {
     });
 
     const render = () => {
-        innercursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+        innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
         requestAnimationFrame(render);
     };
     requestAnimationFrame(render);
