@@ -44,4 +44,7 @@ const initCanvas = () => {
         radius
     );
     polygon.StrokeColor = StrokeColor;
+    polygon.strokeWidth = strokeWidth;
+    polygon.smooth();
+    group = new paper.Group
 }
