@@ -2,6 +2,9 @@
 
 This project demonstrates how to create a custom cursor animation using HTML, CSS, and JavaScript. The custom cursor consists of a small dot with an outline circle that follows the cursor movement, providing a dynamic and visually engaging effect. This animation enhances the user experience by making cursor interactions more interesting and visually appealing.
 
+## Demo
+![image](https://github.com/user-attachments/assets/0a844eeb-774b-487d-b67a-a28d355ff9e5)
+
 ## Features
 
 - **Custom Cursor**: Replaces the default cursor with a small dot and an outline circle.
